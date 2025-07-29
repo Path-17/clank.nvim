@@ -1,1 +1,1 @@
-require("clank").say_hello()
+require("clank")
