@@ -1,2 +1,0 @@
-print "loaded clank.nvim"
-

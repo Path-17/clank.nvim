@@ -1,1 +1,1 @@
-print "testing123"
+require("clank").say_hello()
