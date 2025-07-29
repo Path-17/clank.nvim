@@ -1,7 +1,7 @@
 local M = {}
 
-function M.say_hello()
-    vim.notify("Hello from plugin!", vim.log.levels.INFO)
+function M.hello()
+  print("Hello from Clank!")
 end
 
 return M
