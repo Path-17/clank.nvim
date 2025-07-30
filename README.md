@@ -35,9 +35,9 @@ ex: Base64 the highlighted text, no newlines
 LayupBashOnHighlight base64 -w0
 ```
 
-**Default remap to visual-mode <leader>b**
+Default remap to **visual-mode \<leader\>b**
 
-3. Run bash command on the entire current buffer, replace it with the output. The buffer contents is passed in as stdin to the commands string.
+3. Run bash command on the entire current buffer, replace it with the stdout. The buffer contents is passed in as stdin to the commands string.
 
 
 ```
@@ -48,9 +48,9 @@ ex: Open an nmap scan and filter for open ports
 LayupBashOnHighlight grep open
 ```
 
-**Default remap to normal-mode <leader>B**
+Default remap to **normal-mode \<leader\>B**
 
-4. **Normal mode only.** Run bash command and insert it into the buffer at your cursor.
+4. **Normal mode only.** Run bash command and insert it's stdout into the buffer at your cursor.
 
 
 ```
@@ -61,29 +61,27 @@ ex: dig for dmarc records
 LayupBashToBuf dig _dmarc.domain.tld txt
 ```
 
-**Default remap to normal-mode <leader>b**
+Default remap to **normal-mode \<leader\>b**
 
-5. Select a file using mini.pick inside of the configured directory, insert it into buffer at cursor. Defaults to ~/Documents/georgy/pentests/ for me, feel free to change it (`default_insert_dir` var) in the top of `plugins/layup.lua`.
+5. Select a file using mini.pick inside of the configured directory, insert it into buffer at cursor. Defaults to `~/Documents/georgy/pentests/` for me, feel free to change it. Can find the `default_insert_dir` var in the top of `plugins/layup.lua`.
 
 
 ```
-LayupFileToBuf <bash_args>
+LayupFileToBuf
 
 ex: insert a nmap file
-
-LayupFileToBuf dig _dmarc.domain.tld txt
 ```
 
-**Default remap to normal-mode <leader>F**
+Default remap to **normal-mode \<leader\>F**
 
-6. Select a file using mini.pick inside of the configured directory, run a bash command on it, insert it into buffer at cursor. Defaults to ~/Documents/georgy/pentests/ for me, feel free to change it (`default_insert_dir` var) in the top of `plugins/layup.lua`.
+6. Select a file using mini.pick inside of the configured directory, run a bash command on it, insert the commands stdout into buffer at cursor. Defaults to `~/Documents/georgy/pentests/` for me, feel free to change it. Can find the `default_insert_dir` var in the top of `plugins/layup.lua`.
 
 ```
 LayupFileBashToBuf <bash_args>
 
-ex: dig for dmarc records
+ex: do a quick ping on a list of IPs
 
-LayupFileBashToBuf dig _dmarc.domain.tld txt
+LayupFileBashToBuf while read ip; do echo pinging $ip; ping -c 1 "$ip"; done
 ```
 
-**Default remap to normal-mode <leader>Fb**
+Default remap to **normal-mode \<leader\>Fb**
