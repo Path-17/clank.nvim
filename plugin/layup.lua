@@ -31,7 +31,7 @@ local function custom_complete(ArgLead, CmdLine, CursorPos)
 end
 -- end of helpers --
 
--- Run bash script on a string
+-- Auto complete helper
 vim.api.nvim_create_user_command(
     'LayupAutoComplete',
     require('layup').auto_complete,
