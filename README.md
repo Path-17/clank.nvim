@@ -63,7 +63,7 @@ LayupBashToBuf dig _dmarc.domain.tld txt
 
 **Default remap to normal-mode <leader>b**
 
-5. Select a file using mini.pick inside of the configured directory, insert it into buffer at cursor. Defaults to ~/Documents/georgy/pentests/ for me, feel free to change it (`default_insert_dir` var) in the top of `plugins/layup.lua`.
+5. Select a file using mini.pick inside of the configured directory, insert it into buffer at cursor. Defaults to `~/Documents/georgy/pentests/` for me, feel free to change it. Can find the `default_insert_dir` var in the top of `plugins/layup.lua`.
 
 
 ```
@@ -76,7 +76,7 @@ LayupFileToBuf dig _dmarc.domain.tld txt
 
 **Default remap to normal-mode <leader>F**
 
-6. Select a file using mini.pick inside of the configured directory, run a bash command on it, insert the commands stdout into buffer at cursor. Defaults to ~/Documents/georgy/pentests/ for me, feel free to change it (`default_insert_dir` var) in the top of `plugins/layup.lua`.
+6. Select a file using mini.pick inside of the configured directory, run a bash command on it, insert the commands stdout into buffer at cursor. Defaults to `~/Documents/georgy/pentests/` for me, feel free to change it. Can find the `default_insert_dir` var in the top of `plugins/layup.lua`.
 
 ```
 LayupFileBashToBuf <bash_args>
