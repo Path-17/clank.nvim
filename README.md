@@ -67,11 +67,9 @@ Default remap to **normal-mode \<leader\>b**
 
 
 ```
-LayupFileToBuf <bash_args>
+LayupFileToBuf
 
 ex: insert a nmap file
-
-LayupFileToBuf dig _dmarc.domain.tld txt
 ```
 
 Default remap to **normal-mode \<leader\>F**
@@ -81,9 +79,9 @@ Default remap to **normal-mode \<leader\>F**
 ```
 LayupFileBashToBuf <bash_args>
 
-ex: dig for dmarc records
+ex: do a quick ping on a list of IPs
 
-LayupFileBashToBuf dig _dmarc.domain.tld txt
+LayupFileBashToBuf while read ip; do echo pinging $ip; ping -c 1 "$ip"; done
 ```
 
 Default remap to **normal-mode \<leader\>Fb**
