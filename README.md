@@ -48,7 +48,7 @@ ex: Open an nmap scan and filter for open ports
 LayupBashOnHighlight grep open
 ```
 
-Default remap to **normal-mode \<leader>\B**
+Default remap to **normal-mode \<leader\>B**
 
 4. **Normal mode only.** Run bash command and insert it's stdout into the buffer at your cursor.
 
