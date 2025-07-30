@@ -257,7 +257,8 @@ function M.file_bash_to_buf(src_dir, opts)
 
                                     if exit_code ~= 0 then
                                         err_notify("The command failed with: " .. stderr)
-                                    else
+                                    end
+                                    if stdout ~= nil then
                                         paste_at_cursor(stdout, curbuf, curwin)
                                     end
                                 end)
